@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Elements Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+    section { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; border-radius: 8px; }
+    h2 { background: #f4f4f4; padding: 8px; border-radius: 6px; }
+    table, th, td { border: 1px solid #333; border-collapse: collapse; padding: 5px; }
+    code { background: #eee; padding: 2px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+
+  <h1>HTML Elements Showcase</h1>
+  <p>This page demonstrates common HTML elements with examples.</p>
+
+  <section>
+    <h2>1. Text Content</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <p>This is a <strong>paragraph</strong> with <em>emphasis</em>, <u>underline</u>, and <span style="color:blue">inline span text</span>.</p>
+    <p>Line break example:<br>Second line after a break.</p>
+    <hr>
+    <blockquote>This is a blockquote.</blockquote>
+  </section>
+
+  <section>
+    <h2>2. Lists</h2>
+    <p><strong>Unordered List:</strong></p>
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+    </ul>
+
+    <p><strong>Ordered List:</strong></p>
+    <ol>
+        <li>First</li>
+        <li>Third</li>
+        <li>Second</li>
+    </ol>
+
+    <p><strong>Description List:</strong></p>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>3. Links & Media</h2>
+    <p>Visit <a href="https://www.example.com" target="_blank">Example.com</a>.</p>
+    <img src="https://via.placeholder.com/150" alt="Placeholder image">
+    <video width="250" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <iframe src="https://www.wikipedia.org" width="300" height="200"></iframe>
+  </section>
+
+  <section>
+    <h2>4. Tables</h2>
+    <table>
+      <caption>Sample Table</caption>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Alice</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>Bob</td>
+        <td>30</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>5. Forms</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message"></textarea><br><br>
+
+      <label for="options">Choose an option:</label>
+      <select id="options" name="options">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+      </select><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>6. Semantic Elements</h2>
+    <header><h3>Header Section</h3></header>
+    <nav>Navigation: <a href="#">Home</a> | <a href="#">About</a> | <a href="#">Contact</a></nav>
+    <main>
+      <article>
+        <h4>Article Title</h4>
+        <p>This is an independent article.</p>
+      </article>
+      <section>
+        <h4>Section Title</h4>
+        <p>This is a thematic section.</p>
+      </section>
+      <aside>
+        <p>This is a sidebar (aside content).</p>
+      </aside>
+    </main>
+    <footer>Footer © 2025</footer>
+  </section>
+
+  <section>
+    <h2>7. Interactive & Scripting</h2>
+    <details>
+      <summary>Click to expand details</summary>
+      <p>Here is some hidden content revealed on click.</p>
+    </details>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+    <script>
+      const c = document.getElementById("myCanvas");
+      const ctx = c.getContext("2d");
+      ctx.fillStyle = "red";
+      ctx.fillRect(20, 20, 150, 50);
+    </script>
+  </section>
+
+</body>
+</html>
