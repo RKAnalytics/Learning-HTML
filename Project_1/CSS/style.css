@@ -1,0 +1,173 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body Theme */
+body {
+    background-color: #fff5f5;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #371b1d; /* Zomato red */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Logo */
+header .logo img {
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+header .logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav label {
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+nav select {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    background: #fff;
+    font-size: 14px;
+}
+
+/* Nav Menu */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffb3b3;
+}
+
+/* Hero Section */
+.ima {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(rgba(226, 55, 68, 0.9), rgba(226, 55, 68, 0.8)), url("/img/12.png") center/cover no-repeat;
+    color: white;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.ima img {
+    display: none; /* Hide raw image, using background instead */
+}
+
+.ima h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    animation: slideDown 1s ease forwards;
+}
+
+.ima h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    animation: slideUp 1s ease forwards;
+}
+
+/* Location + Search */
+/* Main Section with background */
+main {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(rgba(226, 55, 68, 0.8), rgba(226, 55, 68, 0.8)), 
+                url("/img/12.png") center/cover no-repeat;
+    color: white;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Hero text inside main */
+.ima {
+    padding: 40px 20px;
+}
+
+.ima img {
+    display: none; /* hide the raw image, background already applied */
+}
+
+.ima h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    animation: slideDown 1s ease forwards;
+}
+
+.ima h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    animation: slideUp 1s ease forwards;
+}
+
+/* Inputs inside main */
+main select,
+main input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    width: 280px;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #371b1d;
+    color: white;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

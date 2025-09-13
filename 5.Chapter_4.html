@@ -5,78 +5,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-}
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
 
-thead {
-  background-color: #f2f2f2;
-}
+        thead {
+            background-color: #f2f2f2;
+        }
 
-th, td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: left;
-}
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
 
-tr:hover {
-  background-color: #f9f9f9;
-}
+        tr:hover {
+            background-color: #f9f9f9;
+        }
 
-th {
-  background-color: #4CAF50;
-  color: white;
-}
-body {
-  font-family: Arial, sans-serif;
-  margin: 40px;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
-}
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
 
-h1 {
-  font-size: 32px;
-  color: #2c3e50;
-  margin-bottom: 10px;
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
-h2 {
-  font-size: 24px;
-  color: #34495e;
-  margin-top: 30px;
-}
+        h1 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
 
-ol, ul {
-  margin-left: 20px;
-  padding-left: 20px;
-}
+        h2 {
+            font-size: 24px;
+            color: #34495e;
+            margin-top: 30px;
+        }
 
-li {
-  margin-bottom: 8px;
-}
+        ol,
+        ul {
+            margin-left: 20px;
+            padding-left: 20px;
+        }
 
-dl {
-  margin-left: 20px;
-}
+        li {
+            margin-bottom: 8px;
+        }
 
-dt {
-  font-weight: bold;
-  color: #2980b9;
-  margin-top: 10px;
-}
+        dl {
+            margin-left: 20px;
+        }
 
-dd {
-  margin-left: 20px;
-  margin-bottom: 10px;
-  color: #555;
-}
+        dt {
+            font-weight: bold;
+            color: #2980b9;
+            margin-top: 10px;
+        }
 
-</style>
+        dd {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 40px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+  }
+
+  form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  div {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+  }
+
+  select {
+    background-color: #fff;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button[type="submit"] {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #1a242f;
+  }
+
+  p {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  hr {
+    margin: 40px 0;
+    border: none;
+    border-top: 2px solid #ccc;
+  }
+    </style>
 </head>
 
 
@@ -155,13 +244,77 @@ dd {
             </tr>
             <tr>
                 <td colspan="3">Thats it for today</td>
-    
+
             </tr>
         </tbody>
     </table>
 
 
     <!-- FORMS -->
+    <hr>
+    <h1>FORMS</h1>
+    <form action="/submit.php"></form>
+    <div>
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Enter Name" required>
+    </div>
+    <div>
+        <!-- here both label and input will get associated with eachother -->
+        <label for="phone">Phone</label>
+        <input id="phone" type="tel" placeholder="Enter Phone" required>
+    </div>
+    <div>
+        <!-- here both label and input will get associated with eachother -->
+        <label for="em">Email</label>
+        <input id="em" type="email" placeholder="Enter your email" required>
+    </div>
+    <div>
+        <!-- here both label and input will get associated with eachother -->
+        <label for="pass">Password</label>
+        <input id="pass" type="password" placeholder="Enter password" required>
+    </div>
+    <div>
+        <!-- here both label and input will get associated with eachother -->
+        <label for="dob">Date of Birth</label>
+        <input id="dob" type="date" required>
+    </div>
+    <div>
+        <label name="gender">Gender</label>
+        <select id="gender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+    </div>
+    <div>
+        <p>subscription of plan</p>
+        <!-- Radio Buttons for selection only one button -->
+        <input id="basic" type="radio" name="subscription" value="basic">
+        <label for="basic">Basic</label>
+        <input id="premium" type="radio" name="subscription" value="premium">
+        <label for="premium">Premium</label>
+        <input id="VIP" type="radio" name="subscription" value="VIP">
+        <label for="VIP">VIP</label>
+    </div>
+    <!-- checkbox for agreeing -->
+    <div>
+        <input id ="terms" type="checkbox" required>
+        <label for="terms">I agree to the terms and condition </label>
+
+    </div>
+
+    <!-- textarea for comments -->
+    <div>
+        <label for="comments">Comments</label>
+        <textarea id="comments" placeholder="Enter your comments" rows="4"></textarea>
+    </div>
+
+    <!-- button -->
+
+    <div>
+        <button type="submit"> Submit</button>
+    </div>
 </body>
 
 </html>
